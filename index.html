@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>
+        My super cool awesome website
+        </title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js">
+ 
+        </script>
+    </head>
+    <body style="background-color:pink">
+        <!-- <h1>
+            My website heading
+        </h1>
+        <h2>
+            Slightly smaller subheading
+        </h2>
+        <p>hi</p> -->
+        <img id="img1" src="Images/chatgpt.png" width="100" height="100" onmouseover="this.src = 'Images/email.png';" onmouseout="this.src = 'Images/chatgpt.png';"">   
+        <img id="img2" src="Images/insta.png" width="100" height="100" onmousedown="this.src = 'Images/chatgpt.png';" onmouseup="this.src = 'Images/email.png';">   
+        <img id="img3" src="Images/email.png" width="100" height="100">   
+
+        <script> 
+        var sound1 = new buzz.sound("sound/beepbeep.mp3");
+        var sound2 = new buzz.sound("sound/longbeep.mp3");
+        var sound3 = new buzz.sound("sound/WaterRunning.mp3");
+
+
+        window.onload = function() {
+            document.getElementById('img1').addEventListener('mouseover', function(){sound1.play();});
+            document.getElementById('img2').addEventListener('mouseover', function(){sound2.play();});
+            document.getElementById('img3').addEventListener('mouseover', function(){sound3.play();});
+
+        }
+        </script>
+    </body>
+
+
+</html>
